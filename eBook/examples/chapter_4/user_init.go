@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./trans"
+	"tw2g/ch4/trans"
 	"fmt"
 )
 

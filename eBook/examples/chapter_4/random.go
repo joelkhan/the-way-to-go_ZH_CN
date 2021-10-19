@@ -11,6 +11,7 @@ func main() {
 		a := rand.Int()
 		fmt.Printf("%d / ", a)
 	}
+	fmt.Println()
 	for i := 0; i < 5; i++ {
 		r := rand.Intn(8)
 		fmt.Printf("%d / ", r)
@@ -21,6 +22,7 @@ func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Printf("%2.2f / ", 100*rand.Float32())
 	}
+	fmt.Println()
 }
 
 /* Output:
