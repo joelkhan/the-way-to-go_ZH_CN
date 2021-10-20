@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf(Season(3))
+	fmt.Printf("%s\n", Season(3))
 }
 
 func Season(month int) string {
