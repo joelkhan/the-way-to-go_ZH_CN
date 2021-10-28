@@ -19,20 +19,22 @@ func main() {
 	for index, rune := range str2 {
 		fmt.Printf("%-2d      %d      %U '%c' % X\n", index, rune, rune, rune, []byte(string(rune)))
 	}
-	
+
+	// 练习 5.9
 	for i := 0; i < 5; i++ {
-    	var v int
-    	fmt.Printf("%d ", v)
-    	v = 5
+		var v int
+		fmt.Printf("%d ", v)
+		v = 5
 	}
-	
+	fmt.Println()
+
 	s := ""
-    for ; s != "aaaaa"; {
-    	fmt.Println("Value of s:", s)
-    	s = s + "a"
-    }
-	
-	for i, j, s := 0, 5, "a"; i < 3 && j < 100 && s != "aaaaa"; i, j, s = i+1, j+1, s + "a" {
+	for s != "aaaaa" {
+		fmt.Println("Value of s:", s)
+		s = s + "a"
+	}
+
+	for i, j, s := 0, 5, "a"; i < 3 && j < 100 && s != "aaaaa"; i, j, s = i+1, j+1, s+"a" {
 		fmt.Println("Value of i, j, s:", i, j, s)
 	}
 }

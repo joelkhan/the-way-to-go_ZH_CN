@@ -1,8 +1,8 @@
 package main
 
 import (
-	"tw2g/ch4/trans"
 	"fmt"
+	"tw2g/ch4/trans"
 )
 
 var twoPi = 2 * trans.Pi // decl computes twoPi

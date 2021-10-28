@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	for i := 0; i <= 10; i++ {
-		fmt.Printf("the complement of %b is: %b\n", i, ^i)
+		fmt.Printf("the complement of (%2d)%-6b is: %b\n", i, i, ^i)
 	}
 }
 
