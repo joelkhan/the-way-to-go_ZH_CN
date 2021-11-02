@@ -10,7 +10,36 @@ func main() {
 	fmt.Printf("The sum of the array is: %f\n", Sum(a))
 	var b = []int{1, 2, 3, 4, 5}
 	sum, average := SumAndAverage(b)
-	fmt.Printf("The sum of the array is: %d, and the average is: %f", sum, average)
+	fmt.Printf("The sum of the array is: %d, and the average is: %f\n", sum, average)
+
+	// 问题 7.5
+	items := [...]int{10, 20, 30, 40, 50}
+	for _, item := range items {
+		item *= 2
+	}
+	for i := 0; i < len(items); i++ {
+		fmt.Printf("%d ", items[i])
+	}
+	fmt.Println()
+
+	for ix := range items {
+		items[ix] *= 2
+	}
+	for i := 0; i < len(items); i++ {
+		fmt.Printf("%d ", items[i])
+	}
+	fmt.Println()
+
+	// 问题 7.7
+	var arr = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var asl = arr[5:7]
+	fmt.Printf("%d %d\n", len(asl), cap(asl))
+	asl = asl[0:4]
+	fmt.Printf("%d %d\n", len(asl), cap(asl))
+	asl = asl[1:1]
+	fmt.Printf("%d %d\n", len(asl), cap(asl))
+	asl = asl[1:2]
+	fmt.Printf("%d %d\n", len(asl), cap(asl))
 }
 
 /*
