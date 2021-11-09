@@ -13,10 +13,11 @@ func main() {
 		"water":  "eau",
 		"coffee": "café",
 		"thea":   "thé"}
+	// 切片，排序用
 	sdrinks := make([]string, len(drinks))
-	ix := 0
 
 	fmt.Printf("The following drinks are available:\n")
+	ix := 0
 	for eng := range drinks {
 		sdrinks[ix] = eng
 		ix++
