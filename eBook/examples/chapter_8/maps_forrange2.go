@@ -6,9 +6,11 @@ func main() {
 	// Version A:
 	items := make([]map[int]int, 5)
 	for i := range items {
+		fmt.Printf("%d ", i)
 		items[i] = make(map[int]int, 1)
 		items[i][1] = 2
 	}
+	fmt.Println()
 	fmt.Printf("Version A: Value of items: %v\n", items)
 
 	// Version B: NOT GOOD!

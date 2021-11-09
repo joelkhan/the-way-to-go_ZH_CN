@@ -28,6 +28,12 @@ func main() {
 	if !flagHolliday {
 		fmt.Println("holliday is not a day!")
 	}
+
+	// 问题 8.1
+	capitals := map[string]string{"France": "Paris", "Italy": "Rome", "Japan": "Tokyo"}
+	for key := range capitals {
+		fmt.Println("Map item: Capital of", key, "is", capitals[key])
+	}
 }
 
 /* Output:
