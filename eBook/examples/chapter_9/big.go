@@ -23,6 +23,12 @@ func main() {
 	rq := big.NewRat(1, 1)
 	rq.Mul(rm, rn).Add(rq, ro).Mul(rq, rp)
 	fmt.Printf("Big Rat: %v\n", rq)
+	ix := big.NewInt(100)
+	iy := big.NewInt(1)
+	iz := big.NewInt(9)
+	izz := big.NewInt(3)
+	ix.Mul(iy, iz).Add(ix, iz).Div(ix, izz)
+	fmt.Printf("Big Int: %v\n", ix)
 }
 
 /* Output:
